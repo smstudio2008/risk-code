@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #ff6600;
+    --primary-color-hover: #e65500;
+    --secondary-color: #808080;
+    --link-color: #ff6600;
+    --link-color-hover: #e65500;
+    --text-color-light: #ffffff;
+    --text-color-dark: #000000;
+
+    --header-background-color: #d8d8d8;
+    --header-text-color: #000000;
+
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.2rem;
+
+    --padding-small: 0.4em 0.8em;
+    --padding-medium: 0.5em 1em;
+    --padding-large: 0.6em 1.2em;
+
+    --border-radius: 4px;
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: 'Nunito', sans-serif;
+    }
+}

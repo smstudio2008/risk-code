@@ -1,0 +1,23 @@
+<h2>
+    Empowering Decision-Making with Advanced Risk Solutions
+</h2>
+
+<p>
+    Risk provides customers with information-based analytics and decision tools that combine public and industry-specific content with advanced technology 
+    and algorithms to assist them in evaluating and predicting risk and enhancing operational efficiency
+</p>
+
+<div class="input-container">
+    <company-ui-lib-input
+        #searchTerm
+        placeholder="Search for a company or number...">
+    </company-ui-lib-input>
+
+    <company-ui-lib-button
+        [disabled]="!searchTerm?.value"
+        (click)="openResults(searchTerm?.value)"
+        size="large"
+        type="primary">
+        Search
+    </company-ui-lib-button>
+</div>

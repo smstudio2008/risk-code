@@ -1,0 +1,33 @@
+<router-outlet></router-outlet>
+
+@if (selectedCompany$ |async; as company) {
+<company-ui-lib-list
+  [title]="company.title"
+  [details]="[
+    { label: 'Company number', value: company.company_number },
+    { label: 'Registered office address', value: company.address_snippet },
+    { label: 'Company status', value: company.company_status },
+    { label: 'Company type', value: company.company_type },
+    { label: 'Incorporated on', value: company.date_of_creation }
+  ]"
+>
+  <company-ui-lib-button
+    (click)="getOfficers(company.company_number)"
+    size="medium"
+    type="link"
+  >
+    List Officers
+  </company-ui-lib-button>
+</company-ui-lib-list>
+}
+
+<!-- Older Control Flow -->
+<div *ngIf="officers$ | async as officers">
+  <h3>Officers</h3>
+  <ul>
+    <li *ngFor="let officer of officers?.items">
+      {{ officer.name }} - {{ officer.occupation }} (Appointed:
+      {{ officer.appointed_on }})
+    </li>
+  </ul>
+</div>

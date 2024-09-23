@@ -1,0 +1,14 @@
+<div class="details-card">
+  <h1>{{ title }}</h1>
+
+  @for (detail of details; track detail) {
+  <div class="detail-item">
+    <p>
+      <strong>{{ detail.label }}</strong
+      ><br />
+      <span>{{ detail.value }}</span>
+    </p>
+  </div>
+  } 
+  <ng-content></ng-content>
+</div>

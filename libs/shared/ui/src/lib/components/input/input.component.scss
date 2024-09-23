@@ -1,0 +1,27 @@
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5em;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    background-color: var(--text-color-light);
+    transition: border-color 0.3s ease;
+
+    &:focus-within {
+        border-color: var(--primary-color);
+    }
+
+    input {
+        border: none;
+        outline: none;
+        flex-grow: 1;
+        font-size: var(--font-size-medium);
+        background-color: transparent;
+        color: var(--text-color-dark);
+
+        &::placeholder {
+            color: var(--secondary-color);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<company-ui-lib-header
+    [title]="'Risk Management App'"
+    [logoUrl]="'assets/images/logo-v2.png'"
+    [showLogo]="true">
+        <company-ui-lib-button
+            size="large"
+            type="link"
+            (click)="handleSignInClick()">
+            {{ buttonTitle }}
+        </company-ui-lib-button>
+
+</company-ui-lib-header>
+
+<router-outlet></router-outlet>

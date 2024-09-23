@@ -1,0 +1,43 @@
+.details-card {
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  background-color: var(--text-color-light);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .detail-item {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    strong {
+      font-weight: bold;
+      display: block;
+    }
+
+    span {
+   ///
+    }
+  }
+
+  .detail-link {
+    margin-top: 1rem;
+
+    .link {
+      color: var(--link-color);
+      text-decoration: underline;
+      font-weight: bold;
+
+      &:hover {
+        color: var(--link-color-hover);
+      }
+    }
+  }
+}

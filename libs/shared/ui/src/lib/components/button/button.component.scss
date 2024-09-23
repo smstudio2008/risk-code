@@ -1,0 +1,78 @@
+@mixin button-size($font-size, $padding) {
+  font-size: $font-size;
+  padding: $padding;
+}
+
+
+@mixin button-type($background-color, $color, $hover-background-color) {
+  background-color: $background-color;
+  color: $color;
+
+  &:hover {
+    background-color: $hover-background-color;
+  }
+}
+
+
+@mixin link-type($color, $hover-color) {
+  background-color: transparent; // No background color
+  color: $color;
+  text-decoration: underline;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+
+button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+
+  &:disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+  }
+
+  // Size variations
+
+  &.btn-small {
+    font-size: var(--font-size-small);
+    padding: var(--padding-small);
+  }
+
+  &.btn-medium {
+    font-size: var(--font-size-medium);
+    padding: var(--padding-medium);
+  }
+
+  &.btn-large {
+    font-size: var(--font-size-large);
+    padding: var(--padding-large);
+  }
+
+
+  &.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+
+    &:hover {
+      background-color: var(--primary-color-hover);
+    }
+  }
+
+  &.btn-link {
+    background-color: transparent;
+    color: var(--link-color);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--link-color-hover);
+    }
+  }
+}

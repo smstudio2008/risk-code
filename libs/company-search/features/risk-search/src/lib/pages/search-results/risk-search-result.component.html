@@ -1,0 +1,15 @@
+@if (companies$| async; as companiesData) {
+<h1>Search Results: Total {{ companiesData?.total_results }}</h1>
+
+<div class="cards">
+  @for (item of companiesData?.items; track $index) {
+
+  <company-ui-lib-card (click)="openDetails(item.company_number)">
+    <h3>{{ item?.title }}</h3>
+    <p>{{ item?.description }}</p>
+    <p>{{ item?.address_snippet }}</p>
+  </company-ui-lib-card>
+
+  }
+</div>
+}
