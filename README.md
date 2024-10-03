@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a Company Risk Search Application built using Angular and Nx. The application allows users to search for companies by name or company number and view details about the companies, including their officers. It utilizes a clean architecture with best practices for state management, routing, and testing.
+This project is a Company Risk Search Application built using Angular and Nx. The application allows users to search for companies by name or company number and view details about the companies, including their officers. It utilises a clean architecture with best practices for state management, routing, and testing.
 
 **Live Demo**: [Company Risk Search Application](https://smstudio2008.github.io/risk-code)
 
